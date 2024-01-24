@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+Pata ID
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a website that should connect people who have lost their national ids with the location of the misplaced ids.
 
 ## Available Scripts
 
