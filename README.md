@@ -1,6 +1,6 @@
-Pata ID
+## Pata ID
 
-This is a website that should connect people who have lost their national ids with the location of the misplaced ids.
+This should be a website that should connect people who have lost their national ids with the location of the misplaced ids.
 
 ## Available Scripts
 
