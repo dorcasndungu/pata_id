@@ -1,6 +1,8 @@
-import './App.css';
-import React, { useState } from 'react';
+// App.js
 
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   const [name, setName] = useState('');
@@ -15,8 +17,6 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Here you can handle the submission, for now, let's just log the data
     console.log({
       name,
       location,
@@ -28,32 +28,29 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Your logo goes here */}
         <h1>ID Information Form</h1>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Name:
-            <input type="text" value={name} onChange={handleNameChange} />
-          </label>
-          <br />
-          <label>
-            Location:
-            <input type="text" value={location} onChange={handleLocationChange} />
-          </label>
-          <br />
-          <label>
-            Phone (optional):
-            <input type="text" value={phone} onChange={handlePhoneChange} />
-          </label>
-          <br />
-          <label>
-            Photo:
-            <input type="file" accept="image/*" onChange={handlePhotoChange} />
-          </label>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
       </header>
+      <form onSubmit={handleSubmit} className="form-container">
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input type="text" className="form-control" id="name" value={name} onChange={handleNameChange} />
+        </div>
+        <div className="form-group">
+          <label htmlFor="location">Location:</label>
+          <input type="text" className="form-control" id="location" value={location} onChange={handleLocationChange} />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone (optional):</label>
+          <input type="text" className="form-control" id="phone" value={phone} onChange={handlePhoneChange} />
+        </div>
+        <div className="form-group">
+          <label htmlFor="photo">Photo :</label>
+          <input type="file" className="form-control-file" id="photo" accept="image/*" onChange={handlePhotoChange} />
+        </div>
+        <button type="submit" className="btn btn-primary btn-block">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
