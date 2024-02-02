@@ -1,6 +1,6 @@
 ## Pata ID
 
-This should be a website that should connect people who have lost their national ids with the location of the misplaced ids.
+This should be a website that should connect people who have lost their national ids with the location of the misplaced ids. The verification is through taking live photos and when that is not possible, id/ passport/ birth certificate
 
 ## Available Scripts
 
