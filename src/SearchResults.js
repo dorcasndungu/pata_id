@@ -22,6 +22,8 @@ const dummyIDs = [
 const SearchResults = () => {
   return (
     <div className="container mt-5">
+      <h1 className="text-center mb-4">Pata ID</h1>
+      <h2 className="text-center mb-4">A website dedicated to find lost ids</h2>
       <h2 className="text-center mb-4">Search Results</h2>
       <div className="row">
         {dummyIDs.map((id) => (
